@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.senaijandira.controlefinanceiro.dados"
+    android:orientation="vertical"
+    android:background="@color/fundo_home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:background="#4169E1"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Olá, seja bem vindo"
+            android:textColor="#fff"
+            android:textSize="34dp"
+            android:typeface="sans"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:text="Saldo Geral"
+            android:textColor="	#32CD32"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+
+            />
+
+        <TextView
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" R$ 250,00"
+            android:textColor="#fff"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:background="#ADD8E6"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Renda e Gastos"
+            android:textColor="#000"
+            android:textSize="28dp"
+            android:typeface="sans"
+            android:textStyle="bold"
+
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10px">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/receita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:tint="#fff"
+            android:backgroundTint="#006400"
+            android:onClick="btn_receita"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receita"
+            android:textColor="#006400"
+            android:textSize="28dp"
+            android:typeface="sans"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/despesas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:tint="#fff"
+            android:backgroundTint="#A62B2B"
+            android:onClick="btn_despesa"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Despesas"
+            android:textColor="#B22222"
+            android:textSize="28dp"
+            android:typeface="sans"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ADD8E6"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sua Conta"
+            android:textColor="#000"
+            android:textSize="28dp"
+            android:typeface="sans"
+            android:textStyle="bold"
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/lancamento"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:background="#800080"
+            android:text="$"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:onClick="lancamentos"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" Lançamentos"
+            android:textColor=" #800080"
+            android:textSize="28dp"
+            android:typeface="sans"
+            android:textStyle="bold"
+
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
